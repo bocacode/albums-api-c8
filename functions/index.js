@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get('/albums', getAllAlbums)
-app.post('/albums', createNewAlbum)
+app.get('/albums', await getAllAlbums)
+app.post('/albums', await createNewAlbum)
 
 export const api = functions.https.onRequest(app)

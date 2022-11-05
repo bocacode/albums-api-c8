@@ -1,12 +1,15 @@
-import { initializeApp, cert, getApps } from 'firebase-admin/app'
-import { getFirestore } from 'firebase-admin/firestore'
-import secrets from '../secrets.js'
+// THIS FILE NOT USED WITH SWITCH TO MONGO
 
-export default function dbConnect() {
-  if(!getApps().length) {
-    initializeApp({
-      credential: cert(secrets)
-    })
-  }
-  return getFirestore()
-}
+
+// import { initializeApp, cert, getApps } from 'firebase-admin/app'
+// import { getFirestore } from 'firebase-admin/firestore'
+// import secrets from '../secrets.js'
+
+// export default function dbConnect() {
+//   if(!getApps().length) {
+//     initializeApp({
+//       credential: cert(secrets)
+//     })
+//   }
+//   return getFirestore()
+// }
